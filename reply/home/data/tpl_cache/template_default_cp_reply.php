@@ -1,0 +1,70 @@
+<?php if(!defined('IN_UCHOME')) exit('Access Denied');?><?php subtplcheck('template/default/cp_reply', '1385214137', 'template/default/cp_reply');?><!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8" />
+       
+        <title>神回复发布</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Enhance Required Form Fields with CSS3" />
+        <meta name="keywords" content="form, html5, css3, animated, transition, required, filter" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="./template/default/upload/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="./template/default/upload/css/style2.css" />
+<script type="text/javascript" src="./template/default/upload/js/modernizr.custom.04022.js"></script>
+<!--[if lt IE 8]>
+<style>
+.af-wrapper{display:none;}
+.ie-note{display:block;}
+</style>
+<![endif]-->
+    </head>
+    <body>
+        <div class="container">
+<!-- Codrops top bar -->
+       
+
+<section class="af-wrapper">
+            <h3>神回复发布</h3>
+        
+<input id="af-showreq" class="af-show-input" type="checkbox" name="showreq" />
+<label for="af-showreq" class="af-show">简单发布/复杂发布</label>
+
+<form class="af-form" id="af-form" method="post" action="cp.php?ac=reply"  enctype="multipart/form-data" >
+<div class="af-outer af-required">
+<div class="af-inner">
+<label for="input-name">标题</label>
+<input type="text" name="subject" id="input-subject" required>
+</div>
+</div>
+<!-- 	<div class="af-outer af-required">
+<div class="af-inner">
+<script type="text/javascript" src="source/script_calendar.js" charset="<?=$_SC['charset']?>"></script>
+<label for="input-name">结束时间</label>
+
+<input type="date" name="endtime" id="input-name"  required>
+</div>
+</div> -->
+<div class="af-outer">
+<div class="af-inner">
+<label for="input-title">具体描述</label>
+<input type="text" name="message" id="input-message">
+</div>
+</div>
+
+
+
+<div class="af-outer">
+<div class="af-inner">
+  <label for="input-email">图片上传</label>
+  <input type="file" name="files" id="input-file" required>
+</div>
+</div>
+
+<input type="submit" value="发布" /> 
+
+</form>
+</section>
+        </div>
+    </body>
+</html><?php ob_out();?>
